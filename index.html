@@ -18,12 +18,14 @@
 
         <!-- expenses start -->
         <h2>My expenses</h2>
-        <!-- table emmet shortcut: table>(thead>th*x)+(tbody>(tr*x>td*x))+(tfoot>td*x)> -->
+        <!-- table emmet shortcut: table>(thead>tr>th*x)+(tbody>(tr*x>td*x))+(tfoot>td*x)> -->
         <table>
             <thead>
-                <th>Number</th>
-                <th>Description</th>
-                <th>Cost</th>
+                <tr>
+                    <th>Number</th>
+                    <th>Description</th>
+                    <th>Cost</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -43,9 +45,11 @@
                 </tr>
             </tbody>
             <tfoot>
-                <td>Total</td>
-                <td></td>
-                <td>360 &euro;</td>
+                <tr>
+                    <td>Total</td>
+                    <td></td>
+                    <td>360 &euro;</td>
+                </tr>
             </tfoot>
         </table>
         <!-- expenses end -->
